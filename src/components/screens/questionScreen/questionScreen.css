@@ -1,0 +1,145 @@
+.question-screen-wrapper {
+  z-index: 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.question-screen-fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.question-screen-entered-data {
+  margin: 0 0 5px 0;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.question-screen-question {
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+
+.question-screen-input-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+
+.question-screen-input {
+  border: 0;
+  outline: 0;
+  padding-left: 6px;
+  padding-bottom: 3px;
+  color: rgba(255,255,255, .8);
+  font-size: 20px;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.question-screen-input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.question-screen-back-button {
+  opacity: 0.2;
+}
+
+.question-screen-back-button,
+.question-screen-next-button {
+  color: white;
+  display: flex;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+  transition:opacity 0.3s linear;
+}
+
+.question-screen-back-button:hover,
+.question-screen-next-button:hover {
+  opacity: 1;
+}
+
+.question-screen-back-button:focus,
+.question-screen-next-button:focus {
+  outline: 0;
+}
+
+.question-screen-make-madlib-button {
+  margin-top: 25px;
+  background-color: transparent;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px;
+  width: 160px;
+  color: black; 
+  transition: all 0.1s linear;
+  background-color: white;
+  border: 1px solid #15AB5A;
+}
+
+.question-screen-button-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.question-screen-submit-buttons-wrapper {
+  width: 100%;
+}
+
+.question-screen-submit-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.question-screen-make-madlib-button:hover {
+  color: white;
+  background-color: #15AB5A;
+  border: 1px solid white;
+}
+
+.question-screen-make-madlib-button:focus {
+  outline: 0;
+}
+
+.question-screen-back-icon {
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.question-screen-next-icon {
+  margin-left: 10px;
+  font-size: 40px;
+}
+
+.question-screen-input-error {
+  color: #ffaa77;
+  font-size: 14px;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
